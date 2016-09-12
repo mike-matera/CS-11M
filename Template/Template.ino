@@ -8,12 +8,18 @@
  * 
  */
 
+// Pin 13 is the LED on your Arduino. This gives it a name.
+int led = 13; 
+
 void setup() {
-  
+  pinMode(led, OUTPUT);  
 }
 
 
 void loop() {
-  
+  digitalWrite(led, HIGH);
+  delay(500);
+  digitalWrite(led, LOW);
+  delay(500);
 }
 
